@@ -1,8 +1,8 @@
-import React from "../imports/react.ts";
+import React, { MouseEvent } from "../imports/react.ts";
 import styled from "../imports/styled-components.ts";
 
 export function Picture({ src, alt }: { src?: string; alt?: string }) {
-  function handleHover(e) {
+  function handleHover(e: MouseEvent<HTMLImageElement>) {
     let rect = e.target.getBoundingClientRect();
     let dx = (e.clientX - rect.x - rect.width / 2) * 2e-6;
     let dy = (e.clientY - rect.y - rect.height / 2) * 2e-6;
@@ -10,7 +10,7 @@ export function Picture({ src, alt }: { src?: string; alt?: string }) {
     e.target.style.setProperty("--proj-y", dy);
     e.target.style.border = "5px solid #f0306f";
   }
-  function handleLeave(e) {
+  function handleLeave(e: MouseEvent<HTMLImageElement>) {
     e.target.style.setProperty("--proj-x", 0);
     e.target.style.setProperty("--proj-y", 0);
     e.target.style.border = "4px solid #393939";

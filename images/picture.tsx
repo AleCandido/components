@@ -1,5 +1,5 @@
-import React from "../imports/react";
-import styled from "../imports/styled-components";
+import React from "../imports/react.ts";
+import styled from "../imports/styled-components.ts";
 
 export function Picture({ src, alt }: { src?: string; alt?: string }) {
   function handleHover(e) {

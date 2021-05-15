@@ -1,5 +1,6 @@
-import React, { MouseEvent } from "../imports/react.ts";
-import styled from "../imports/styled-components.ts";
+// import React, { MouseEvent } from "../imports/react.ts";
+import React, { MouseEvent } from "react";
+import styled from "styled-components";
 
 export function Picture({
   src,

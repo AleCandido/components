@@ -46,6 +46,7 @@ export const PictureFrame = styled.div`
     --proj-x: 0;
     --proj-y: 0;
     max-width: 100%;
+    box-sizing: border-box;
     border: 4px solid #393939;
     border-radius: 5px;
     transform: matrix3d(

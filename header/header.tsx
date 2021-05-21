@@ -21,6 +21,7 @@ export const Title = styled.h1`
   margin: 0.5em 0 0.6em 0;
   font-size: 3rem;
   font-family: "Indie Flower", cursive;
+  text-shadow: white 3px 0px 1px;
 
   & em {
     font-size: 0.9em;

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>drawer</title>
+    <link rel="stylesheet" href="test.css" type="text/css" charset="utf-8" />
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <mode-selector
+      name="ciao2"
+      n="5"
+      choices='{ "grey":"#aaa", "dark":"#333", "blue":"#00b", "green":"#0b0", "red":"#b00" }'
+      default="dark"
+      geometry="circle"
+      callback="setBodyClass"
+    ></mode-selector>
+    <mode-selector name="come" n="10"></mode-selector>
+    <script src="mode-selector.js"></script>
+  </body>
+</html>
